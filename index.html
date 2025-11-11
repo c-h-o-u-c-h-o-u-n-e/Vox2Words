@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO and Social Sharing Meta Tags -->
+  <title>Vox2Words</title>
+  <meta name="description" content="Instantly transcribe the lyrics from any song. Upload your audio file and let our AI-powered tool, Vox2Words, do the rest." />
+  <meta name="keywords" content="lyrics, transcriber, AI, music, song, audio, gemini" />
+  <meta property="og:title" content="Vox2Words - AI Lyric Transcriber" />
+  <meta property="og:description" content="Instantly transcribe the lyrics from any song with the power of AI." />
+  <meta property="og:type" content="website" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.21.0"
+  }
+}
+</script>
+<style>
+  @font-face {
+    font-family: 'WFVisual-Sans';
+    src: url('/fonts/WFVisual-Sans.woff2') format('woff2'),
+         url('/fonts/WFVisual-Sans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* Apply base and title fonts directly */
+  body {
+    font-family: 'WFVisual-Sans', sans-serif;
+  }
+
+  pre {
+    font-family: 'WFVisual-Sans', sans-serif;
+  }
+
+  .font-title {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 900;
+  }
+
+  /* Custom scrollbar for lyrics */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #262626; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #a16207; /* dark yellow */
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #facc15; /* yellow-400 */
+  }
+
+</style>
+</head>
+<body class="bg-[#1a1a1a] text-neutral-200 antialiased">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

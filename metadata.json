@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Vox2Words",
+  "description": "Upload a music file and let the AI transcribe the lyrics.",
+  "requestFramePermissions": []
+}
